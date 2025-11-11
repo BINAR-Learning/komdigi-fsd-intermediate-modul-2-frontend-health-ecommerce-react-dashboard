@@ -24,13 +24,12 @@ function ProductDetailPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">Product Detail</h1>
-      
+
       <p className="text-gray-600">
-        ⚠️ TODO: Display product details dengan dynamic routing!
+        TODO: Display product details dengan dynamic routing!
       </p>
     </div>
-  )
+  );
 }
 
-export default ProductDetailPage
-
+export default ProductDetailPage;

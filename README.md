@@ -1,4 +1,4 @@
-# 🚀 health-ecommerce-react-dashboard
+# health-ecommerce-react-dashboard
 
 > **E-Commerce Dashboard dengan React Router, React Query & Ant Design**
 
@@ -12,14 +12,14 @@ Complete e-commerce dashboard dengan multi-page navigation, smart caching, profe
 
 ---
 
-## 📦 Apa yang Ada di Repository Ini?
+## Apa yang Ada di Repository Ini?
 
 Repository ini berisi **2 versi project**:
 
 ```
 health-ecommerce-react-dashboard/
 ├── README.md (Ini file yang kamu baca)
-├── starter-project/     # 📝 Untuk practice (dengan TODO)
+├── starter-project/     #  Untuk practice (dengan TODO)
 │   ├── README.md
 │   ├── package.json
 │   ├── src/
@@ -29,7 +29,7 @@ health-ecommerce-react-dashboard/
 │   │   ├── services/
 │   │   └── App.jsx
 │   └── ... config files
-└── finished-project/    # ✅ Complete dashboard
+└── finished-project/    #  Complete dashboard
     ├── README.md
     ├── package.json
     ├── src/
@@ -48,20 +48,20 @@ health-ecommerce-react-dashboard/
 
 ---
 
-## 🚀 Quick Start (Untuk Newbie)
+## Quick Start (Untuk Newbie)
 
 ### Prerequisites
 
 Sebelum mulai, pastikan:
 
-- ✅ **ULTIMATE BACKEND running** di `http://localhost:5000`
-  - **Repository:** `health-ecommerce-ai-integration` (Backend Modul 5)
-  - **Project:** `finished-project/`
-  - **Setup:** See [ULTIMATE_BACKEND_SETUP.md](../../ULTIMATE_BACKEND_SETUP.md)
-- ✅ **Node.js v18+** installed
-- ✅ **Completed Frontend Modul 1** (React Fundamentals)
+- **ULTIMATE BACKEND running** di `http://localhost:5000`
+- **Repository:** `health-ecommerce-ai-integration` (Backend Modul 5)
+- **Project:** `finished-project/`
+- **Setup:** See [ULTIMATE_BACKEND_SETUP.md](../../ULTIMATE_BACKEND_SETUP.md)
+- **Node.js v18+** installed
+- **Completed Frontend Modul 1** (React Fundamentals)
 
-**📍 Setup ULTIMATE Backend (jika belum):**
+** Setup ULTIMATE Backend (jika belum):**
 
 ```bash
 # Clone backend
@@ -124,54 +124,54 @@ npm run dev
 
 ---
 
-## 🎯 Apa yang Akan Kamu Bangun?
+## Apa yang Akan Kamu Bangun?
 
 **Complete E-Commerce Dashboard** - Leveling up dari Modul 1!
 
 ### Features:
 
-- ✅ **Multi-Page App** - Home, Products, Detail, Cart, Login (React Router)
-- ✅ **Smart Caching** - Auto-cache products, no duplicate requests (React Query)
-- ✅ **Professional UI** - Beautiful components dari Ant Design
-- ✅ **Global State** - Shopping cart accessible dari semua pages (Context API)
-- ✅ **Authentication** - Login flow dengan JWT dari backend
-- ✅ **Advanced Filtering** - Search, category, price range
-- ✅ **Responsive** - Works di mobile, tablet, desktop
+- **Multi-Page App** - Home, Products, Detail, Cart, Login (React Router)
+- **Smart Caching** - Auto-cache products, no duplicate requests (React Query)
+- **Professional UI** - Beautiful components dari Ant Design
+- **Global State** - Shopping cart accessible dari semua pages (Context API)
+- **Authentication** - Login flow dengan JWT dari backend
+- **Advanced Filtering** - Search, category, price range
+- **Responsive** - Works di mobile, tablet, desktop
 
 ### Tech Stack (Upgrade dari Modul 1):
 
-- ⚛️ **React 18** + **Vite**
-- 🛣️ **React Router 6** (NEW! Multi-page navigation)
-- 🔄 **React Query** (NEW! Smart caching)
-- 🎨 **Ant Design** (NEW! Professional UI library)
-- 🌐 **Context API** (NEW! Global state)
-- 🎨 **TailwindCSS** (From Modul 1)
-- 🔌 **Axios** (From Modul 1)
+- **React 18** + **Vite**
+- **React Router 6** (NEW! Multi-page navigation)
+- **React Query** (NEW! Smart caching)
+- **Ant Design** (NEW! Professional UI library)
+- **Context API** (NEW! Global state)
+- **TailwindCSS** (From Modul 1)
+- **Axios** (From Modul 1)
 
 ---
 
-## 📁 Struktur Starter Project
+## Struktur Starter Project
 
 ```
 starter-project/
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx            # ⚠️ TODO: Navigation with cart badge
-│   │   ├── ProductCard.jsx       # ⚠️ TODO: Ant Design Card
-│   │   └── ProtectedRoute.jsx    # ⚠️ TODO: Auth guard
+│   │   ├── Navbar.jsx            #  TODO: Navigation with cart badge
+│   │   ├── ProductCard.jsx       #  TODO: Ant Design Card
+│   │   └── ProtectedRoute.jsx    #  TODO: Auth guard
 │   ├── pages/
-│   │   ├── HomePage.jsx          # ⚠️ TODO: Landing page
-│   │   ├── ProductsPage.jsx      # ⚠️ TODO: Catalog with React Query
-│   │   ├── ProductDetailPage.jsx # ⚠️ TODO: Single product
-│   │   ├── CartPage.jsx          # ⚠️ TODO: Shopping cart
-│   │   └── LoginPage.jsx         # ⚠️ TODO: Auth
+│   │   ├── HomePage.jsx          #  TODO: Landing page
+│   │   ├── ProductsPage.jsx      #  TODO: Catalog with React Query
+│   │   ├── ProductDetailPage.jsx #  TODO: Single product
+│   │   ├── CartPage.jsx          #  TODO: Shopping cart
+│   │   └── LoginPage.jsx         #  TODO: Auth
 │   ├── context/
-│   │   └── CartContext.jsx       # ⚠️ TODO: Global cart state
+│   │   └── CartContext.jsx       #  TODO: Global cart state
 │   ├── services/
-│   │   └── api.js                # ✅ From Modul 1 (ready!)
-│   ├── App.jsx                   # ⚠️ TODO: Setup routes
-│   └── main.jsx                  # ⚠️ TODO: Setup providers
-└── package.json                   # ✅ All dependencies listed
+│   │   └── api.js                #  From Modul 1 (ready!)
+│   ├── App.jsx                   #  TODO: Setup routes
+│   └── main.jsx                  #  TODO: Setup providers
+└── package.json                   #  All dependencies listed
 ```
 
 **TODOs:**
@@ -184,44 +184,44 @@ starter-project/
 
 ---
 
-## 📁 Struktur Finished Project
+## Struktur Finished Project
 
 ```
 finished-project/
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx            # ✅ Complete with cart badge
-│   │   ├── ProductCard.jsx       # ✅ Ant Design + Tailwind
-│   │   ├── ProductTable.jsx      # ✅ Admin table
-│   │   └── ProtectedRoute.jsx    # ✅ Auth guard working
+│   │   ├── Navbar.jsx            #  Complete with cart badge
+│   │   ├── ProductCard.jsx       #  Ant Design + Tailwind
+│   │   ├── ProductTable.jsx      #  Admin table
+│   │   └── ProtectedRoute.jsx    #  Auth guard working
 │   ├── pages/
-│   │   ├── HomePage.jsx          # ✅ Hero + features
-│   │   ├── ProductsPage.jsx      # ✅ With filters + React Query
-│   │   ├── ProductDetailPage.jsx # ✅ Dynamic routing
-│   │   ├── CartPage.jsx          # ✅ Cart management
-│   │   └── LoginPage.jsx         # ✅ JWT authentication
+│   │   ├── HomePage.jsx          #  Hero + features
+│   │   ├── ProductsPage.jsx      #  With filters + React Query
+│   │   ├── ProductDetailPage.jsx #  Dynamic routing
+│   │   ├── CartPage.jsx          #  Cart management
+│   │   └── LoginPage.jsx         #  JWT authentication
 │   ├── context/
-│   │   ├── CartContext.jsx       # ✅ Global cart state
-│   │   └── AuthContext.jsx       # ✅ Global auth state
+│   │   ├── CartContext.jsx       #  Global cart state
+│   │   └── AuthContext.jsx       #  Global auth state
 │   ├── services/
-│   │   └── api.js                # ✅ Complete API service
-│   ├── App.jsx                   # ✅ All routes configured
-│   └── main.jsx                  # ✅ All providers nested
+│   │   └── api.js                #  Complete API service
+│   ├── App.jsx                   #  All routes configured
+│   └── main.jsx                  #  All providers nested
 └── package.json
 ```
 
 **All features working:**
 
-- ✅ Multi-page navigation (5 pages)
-- ✅ React Query caching & refetching
-- ✅ Ant Design professional UI
-- ✅ Global cart state
-- ✅ Authentication flow
-- ✅ Protected routes
+- Multi-page navigation (5 pages)
+- React Query caching & refetching
+- Ant Design professional UI
+- Global cart state
+- Authentication flow
+- Protected routes
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### 1. Test Multi-Page Navigation
 
@@ -237,7 +237,7 @@ npm run dev
 - Click "Products" → Navigate to /products
 - Click product card → Navigate to /products/:id
 - Click "Cart" → Navigate to /cart
-- URL changes, no page reload! ✅
+- URL changes, no page reload!
 
 ### 2. Test React Query Caching
 
@@ -267,7 +267,7 @@ Password: Aila123!
 
 ---
 
-## 🆚 Perbedaan dengan Modul 1
+## Perbedaan dengan Modul 1
 
 | Aspect            | Modul 1 (Fundamentals)       | Modul 2 (Advanced)                            |
 | ----------------- | ---------------------------- | --------------------------------------------- |
@@ -283,9 +283,9 @@ Password: Aila123!
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
-### ❌ "useQuery is not defined"
+### "useQuery is not defined"
 
 **Solusi:**
 
@@ -299,7 +299,7 @@ Tambahkan di main.jsx:
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 ```
 
-### ❌ "Ant Design styles not loading"
+### "Ant Design styles not loading"
 
 **Solusi:**
 
@@ -308,7 +308,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "antd/dist/reset.css";
 ```
 
-### ❌ "useCart must be used within CartProvider"
+### "useCart must be used within CartProvider"
 
 **Solusi:**
 Check main.jsx - CartProvider harus wrap App:
@@ -319,7 +319,7 @@ Check main.jsx - CartProvider harus wrap App:
 </CartProvider>
 ```
 
-### ❌ "Cannot read property 'data' of undefined"
+### "Cannot read property 'data' of undefined"
 
 **Solusi:**
 Use optional chaining dengan React Query:
@@ -330,7 +330,7 @@ const products = data?.data || [];
 
 ---
 
-## 💡 Tips Development
+## Tips Development
 
 1. **Keep backend running** - Port 5000
 2. **Use React Query DevTools** - See cache in action
@@ -340,7 +340,7 @@ const products = data?.data || [];
 
 ---
 
-## 📚 Resources
+## Resources
 
 **Documentation:**
 
@@ -355,26 +355,26 @@ const products = data?.data || [];
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 After completing this module:
 
-1. ✅ **Test complete dashboard** - All features working
-2. ✅ **Deploy to Vercel/Netlify** - Share your work!
-3. ➡️ **Frontend Modul 3** - UI/UX best practices, Playwright intro
-4. ➡️ **Common Modules** - Testing & GitHub workflow
-5. 🎨 **Customize** - Make it yours!
+1.  **Test complete dashboard** - All features working
+2.  **Deploy to Vercel/Netlify** - Share your work!
+3.  **Frontend Modul 3** - UI/UX best practices, Playwright intro
+4.  **Common Modules** - Testing & GitHub workflow
+5.  **Customize** - Make it yours!
 
 ---
 
-**Happy Building! 🚀**
+**Happy Building! **
 
 _Frontend Modul 2 - React Advanced_  
 _Connecting to Health E-Commerce ULTIMATE Backend (Port 5000)_
 
 ---
 
-**📁 Repository Info:**
+** Repository Info:**
 
 - **Name:** `health-ecommerce-react-dashboard`
 - **Type:** React Advanced (Multi-Page Dashboard)

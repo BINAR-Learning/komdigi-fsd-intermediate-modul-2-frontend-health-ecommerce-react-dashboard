@@ -1,4 +1,4 @@
-# ✅ Health E-Commerce Dashboard - Complete Implementation
+# Health E-Commerce Dashboard - Complete Implementation
 
 > **Frontend Modul 2: React Advanced dengan Router, Query & Ant Design**
 
@@ -7,27 +7,29 @@
 [![React Query](https://img.shields.io/badge/TanStack_Query-5.17-purple)](https://tanstack.com/query/)
 [![Ant Design](https://img.shields.io/badge/Ant_Design-5.12-cyan)](https://ant.design/)
 
-**Complete reference implementation - All features working!** ✅
+**Complete reference implementation - All features working!**
 
 ---
 
-## 📦 Apa Isi Project Ini?
+## Apa Isi Project Ini?
 
 **Finished project** dengan **semua fitur lengkap**:
-- ✅ React Router v6 - Multi-page navigation (5 pages)
-- ✅ TanStack Query v5 - Smart caching & auto-refetch
-- ✅ Ant Design v5 - Professional UI components
-- ✅ Context API - Global cart state
-- ✅ Backend integration - localhost:5000
-- ✅ localStorage persistence - Cart survives reload!
 
-**Status:** ✅ **COMPLETE** - Siap dipelajari & dijalankan!
+- React Router v6 - Multi-page navigation (5 pages)
+- TanStack Query v5 - Smart caching & auto-refetch
+- Ant Design v5 - Professional UI components
+- Context API - Global cart state
+- Backend integration - localhost:5000
+- localStorage persistence - Cart survives reload!
+
+**Status:** **COMPLETE** - Siap dipelajari & dijalankan!
 
 ---
 
-## 🎯 What You'll See
+## What You'll See
 
 **Complete Features:**
+
 1. **Homepage** - Hero section + features cards
 2. **Products Page** - Product grid dengan filters (category, search)
 3. **Product Detail** - Dynamic routing, detailed view
@@ -35,6 +37,7 @@
 5. **Login Page** - Authentication dengan JWT
 
 **Tech Highlights:**
+
 - React Query caching (data persists 5 minutes!)
 - Cart persists in localStorage
 - Responsive Ant Design components
@@ -43,12 +46,13 @@
 
 ---
 
-## 🚀 Quick Start (Untuk Newbie)
+## Quick Start (Untuk Newbie)
 
 ### Prerequisites
 
 **Wajib Running:**
-- ✅ **ULTIMATE Backend** di `http://localhost:5000`
+
+- **ULTIMATE Backend** di `http://localhost:5000`
 
 ```bash
 # Setup Backend (jika belum)
@@ -82,16 +86,17 @@ npm run dev
 # Jika tidak, buka manual
 ```
 
-**✅ Expected Result:**
-- Homepage dengan hero section ✅
-- Navigate to Products → Product grid loads ✅
-- Click product → Detail page dengan info lengkap ✅
-- Add to cart → Badge updates, cart persists ✅
-- React Query DevTools visible (bottom-left) ✅
+** Expected Result:**
+
+- Homepage dengan hero section
+- Navigate to Products → Product grid loads
+- Click product → Detail page dengan info lengkap
+- Add to cart → Badge updates, cart persists
+- React Query DevTools visible (bottom-left)
 
 ---
 
-## 🎯 Key Features Explained
+## Key Features Explained
 
 ### 1. React Router v6 Multi-Page
 
@@ -109,6 +114,7 @@ npm run dev
 ```
 
 **Test:**
+
 - Click navigation links → URL changes
 - Use browser back/forward → Works perfectly!
 - Bookmark product detail → Direct access works!
@@ -122,23 +128,25 @@ npm run dev
 ```jsx
 // src/pages/ProductsPage.jsx
 const { data, isLoading } = useQuery({
-  queryKey: ['products', filters],
+  queryKey: ["products", filters],
   queryFn: () => getProducts(filters),
-  staleTime: 5 * 60 * 1000  // Fresh for 5 minutes!
-})
+  staleTime: 5 * 60 * 1000, // Fresh for 5 minutes!
+});
 ```
 
 **Benefits:**
-- ✅ No duplicate requests (smart caching)
-- ✅ Auto background refetch (keep data fresh)
-- ✅ Loading & error states built-in
-- ✅ DevTools untuk debugging
+
+- No duplicate requests (smart caching)
+- Auto background refetch (keep data fresh)
+- Loading & error states built-in
+- DevTools untuk debugging
 
 **Test React Query:**
+
 1. Open React Query DevTools (bottom-left)
 2. Navigate to Products → See "fetching" → "fresh"
 3. Navigate away → Navigate back
-4. Data instant! (from cache) ✅
+4. Data instant! (from cache)
 
 ---
 
@@ -147,15 +155,17 @@ const { data, isLoading } = useQuery({
 **50+ ready-to-use components!**
 
 Used in this project:
+
 - Card, Button, Table, Form, Input
 - Select, Tag, Badge, Spin, Alert, Empty
 - Descriptions, InputNumber
 
 **Why Ant Design?**
-- ✅ Consistent design system
-- ✅ Accessibility built-in
-- ✅ Mobile responsive
-- ✅ Customizable themes
+
+- Consistent design system
+- Accessibility built-in
+- Mobile responsive
+- Customizable themes
 
 ---
 
@@ -167,10 +177,10 @@ Used in this project:
 // src/context/CartContext.jsx
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
-  
+
   const addToCart = (product) => { /* logic */ };
   const removeFromCart = (id) => { /* logic */ };
-  
+
   return (
     <CartContext.Provider value={{ cart, addToCart, ... }}>
       {children}
@@ -183,9 +193,10 @@ const { cart, addToCart } = useCart();
 ```
 
 **Benefits:**
-- ✅ No prop drilling
-- ✅ Cart persists across pages
-- ✅ Easy to use (1 hook)
+
+- No prop drilling
+- Cart persists across pages
+- Easy to use (1 hook)
 
 ---
 
@@ -196,43 +207,45 @@ const { cart, addToCart } = useCart();
 ```jsx
 // Load on mount
 useEffect(() => {
-  const saved = localStorage.getItem('cart');
+  const saved = localStorage.getItem("cart");
   if (saved) setCart(JSON.parse(saved));
 }, []);
 
 // Save on change
 useEffect(() => {
-  localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem("cart", JSON.stringify(cart));
 }, [cart]);
 ```
 
 **Test:**
+
 - Add products to cart
 - Reload page (Ctrl+R)
-- Cart still there! ✅
+- Cart still there!
 
 ---
 
-## 🆚 Perbedaan dengan Starter Project
+## Perbedaan dengan Starter Project
 
-| Aspect | Starter Project | Finished Project |
-|--------|----------------|------------------|
-| **main.jsx** | TODOs for providers | ✅ All providers configured |
-| **App.jsx** | TODOs for routes | ✅ All 5 routes working |
-| **CartContext** | TODO implementations | ✅ Complete cart logic |
-| **Pages** | TODO placeholders | ✅ Fully implemented |
-| **Components** | Basic structure | ✅ Complete with Ant Design |
-| **API calls** | TODOs | ✅ React Query integration |
-| **Styling** | Minimal | ✅ Polished dengan Ant Design |
+| Aspect          | Starter Project      | Finished Project           |
+| --------------- | -------------------- | -------------------------- |
+| **main.jsx**    | TODOs for providers  | All providers configured   |
+| **App.jsx**     | TODOs for routes     | All 5 routes working       |
+| **CartContext** | TODO implementations | Complete cart logic        |
+| **Pages**       | TODO placeholders    | Fully implemented          |
+| **Components**  | Basic structure      | Complete with Ant Design   |
+| **API calls**   | TODOs                | React Query integration    |
+| **Styling**     | Minimal              | Polished dengan Ant Design |
 
 **Learning Approach:**
+
 1. Try implementing starter first (learn by doing)
 2. Compare dengan finished (see best practices)
 3. Understand WHY certain patterns used
 
 ---
 
-## 🧪 Testing Guide
+## Testing Guide
 
 ### 1. Test Backend Connection
 
@@ -246,6 +259,7 @@ curl http://localhost:5000/api/products
 ### 2. Test React Query Caching
 
 **Steps:**
+
 1. Navigate to /products
 2. Open React Query DevTools (bottom-left corner)
 3. See query status: `fetching` → `success` → `fresh`
@@ -254,6 +268,7 @@ curl http://localhost:5000/api/products
 6. Data loads instantly (from cache!)
 
 **Expected:**
+
 - First load: ~500ms (network request)
 - Cached load: <10ms (instant!)
 
@@ -262,27 +277,28 @@ curl http://localhost:5000/api/products
 ### 3. Test Shopping Cart
 
 **Scenario:**
+
 ```
 1. Add "Vitamin C" from Products page
-   ✅ Badge shows "1"
-   ✅ Message: "Vitamin C added to cart!"
+    Badge shows "1"
+    Message: "Vitamin C added to cart!"
 
 2. Navigate to Homepage
-   ✅ Badge still shows "1" (persists!)
+    Badge still shows "1" (persists!)
 
 3. Navigate to Cart page
-   ✅ Vitamin C listed in table
+    Vitamin C listed in table
 
 4. Update quantity to 3
-   ✅ Subtotal updates
-   ✅ Total updates
+    Subtotal updates
+    Total updates
 
 5. Remove product
-   ✅ Product removed
-   ✅ Badge updates to "0"
+    Product removed
+    Badge updates to "0"
 
 6. Reload page (Ctrl+R)
-   ✅ Cart empty (localStorage cleared on remove)
+    Cart empty (localStorage cleared on remove)
 ```
 
 ---
@@ -303,27 +319,27 @@ Password: Aila123!
 
 ---
 
-## 📁 Project Structure (Complete)
+## Project Structure (Complete)
 
 ```
 finished-project/
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx            # ✅ Navigation dengan cart badge
-│   │   └── ProductCard.jsx       # ✅ Ant Design Card
+│   │   ├── Navbar.jsx            #  Navigation dengan cart badge
+│   │   └── ProductCard.jsx       #  Ant Design Card
 │   ├── pages/
-│   │   ├── HomePage.jsx          # ✅ Hero + features
-│   │   ├── ProductsPage.jsx      # ✅ Catalog dengan React Query
-│   │   ├── ProductDetailPage.jsx # ✅ Dynamic routing
-│   │   ├── CartPage.jsx          # ✅ Cart table
-│   │   └── LoginPage.jsx         # ✅ Auth form
+│   │   ├── HomePage.jsx          #  Hero + features
+│   │   ├── ProductsPage.jsx      #  Catalog dengan React Query
+│   │   ├── ProductDetailPage.jsx #  Dynamic routing
+│   │   ├── CartPage.jsx          #  Cart table
+│   │   └── LoginPage.jsx         #  Auth form
 │   ├── context/
-│   │   └── CartContext.jsx       # ✅ Global cart state
+│   │   └── CartContext.jsx       #  Global cart state
 │   ├── services/
-│   │   └── api.js                # ✅ API functions
-│   ├── App.jsx                   # ✅ Router configured
-│   ├── main.jsx                  # ✅ All providers
-│   └── index.css                 # ✅ Tailwind + custom
+│   │   └── api.js                #  API functions
+│   ├── App.jsx                   #  Router configured
+│   ├── main.jsx                  #  All providers
+│   └── index.css                 #  Tailwind + custom
 ├── index.html
 ├── vite.config.js
 ├── tailwind.config.js
@@ -333,13 +349,14 @@ finished-project/
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
-### ❌ "Failed to fetch products"
+### "Failed to fetch products"
 
 **Problem:** Backend tidak running atau CORS issue
 
 **Fix:**
+
 ```bash
 # 1. Verify backend running
 curl http://localhost:5000/api/products
@@ -354,48 +371,51 @@ npm run dev
 
 ---
 
-### ❌ "useCart is not defined" / Context Error
+### "useCart is not defined" / Context Error
 
 **Problem:** Import path salah atau provider not setup
 
 **Fix:**
+
 ```jsx
 // Check main.jsx
-import { CartProvider } from './context/CartContext'
+import { CartProvider } from "./context/CartContext";
 
 <CartProvider>
   <App />
-</CartProvider>
+</CartProvider>;
 
 // Check component
-import { useCart } from '../context/CartContext'  // Note: relative path!
+import { useCart } from "../context/CartContext"; // Note: relative path!
 ```
 
 ---
 
-### ❌ React Query not showing cached data
+### React Query not showing cached data
 
 **Problem:** QueryClient config issue
 
 **Fix:**
+
 ```jsx
 // main.jsx - Check staleTime configured
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 5 * 60 * 1000,  // Must be set!
-    }
-  }
-})
+      staleTime: 5 * 60 * 1000, // Must be set!
+    },
+  },
+});
 ```
 
 ---
 
-### ❌ Ant Design icons not showing
+### Ant Design icons not showing
 
 **Problem:** Icon package tidak ter-install
 
 **Fix:**
+
 ```bash
 npm install @ant-design/icons
 
@@ -405,37 +425,39 @@ npm install
 
 ---
 
-### ❌ Port 3000 already in use
+### Port 3000 already in use
 
 **Problem:** Another service using port 3000
 
 **Fix:**
+
 ```js
 // vite.config.js
 export default defineConfig({
   server: {
-    port: 3001  // Change to free port
-  }
-})
+    port: 3001, // Change to free port
+  },
+});
 ```
 
 ---
 
-### ❌ "localStorage is not defined"
+### "localStorage is not defined"
 
 **Problem:** localStorage access di SSR context
 
 **Fix:**
+
 ```jsx
 // Add safe check
-if (typeof window !== 'undefined') {
-  localStorage.setItem('cart', JSON.stringify(cart));
+if (typeof window !== "undefined") {
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
 ```
 
 ---
 
-## 🎨 Visual Preview
+## Visual Preview
 
 🖼️ **[GIF Placeholder - Homepage Preview]**
 _Hero section dengan gradient background → Features cards (3 columns) → CTA button "Mulai Belanja" → Click navigates to Products_
@@ -451,17 +473,19 @@ _Navigate to Products (first time) → Query shows "fetching" → Data loads →
 
 ---
 
-## 💡 What You'll Learn
+## What You'll Learn
 
 **By studying this finished project:**
 
 1. **React Router Patterns**
+
    - Multi-page setup
    - Dynamic routes (:id parameter)
    - Programmatic navigation (useNavigate)
    - Active link styling
 
 2. **React Query Mastery**
+
    - Query setup dengan useQuery
    - Query keys untuk caching
    - Loading & error states
@@ -469,6 +493,7 @@ _Navigate to Products (first time) → Query shows "fetching" → Data loads →
    - DevTools debugging
 
 3. **Ant Design Integration**
+
    - Form handling
    - Table dengan custom columns
    - Icons library
@@ -476,6 +501,7 @@ _Navigate to Products (first time) → Query shows "fetching" → Data loads →
    - Responsive grid (Row/Col)
 
 4. **Context API Pattern**
+
    - Provider setup
    - Custom hook (useCart)
    - State management
@@ -489,15 +515,15 @@ _Navigate to Products (first time) → Query shows "fetching" → Data loads →
 
 ---
 
-## 📚 Code Highlights
+## Code Highlights
 
 ### React Query dengan Filters
 
 ```jsx
 // Products refetch automatically when filters change!
 const { data } = useQuery({
-  queryKey: ['products', filters],  // Key includes filters
-  queryFn: () => getProducts(filters)
+  queryKey: ["products", filters], // Key includes filters
+  queryFn: () => getProducts(filters),
 });
 ```
 
@@ -506,7 +532,7 @@ const { data } = useQuery({
 ```jsx
 // Cart persists across sessions
 useEffect(() => {
-  const saved = localStorage.getItem('cart');
+  const saved = localStorage.getItem("cart");
   if (saved) setCart(JSON.parse(saved));
 }, []);
 ```
@@ -519,7 +545,7 @@ useEffect(() => {
   footer={() => (
     <div className="flex justify-between">
       <Button>Clear</Button>
-      <div>Total: Rp {total.toLocaleString('id-ID')}</div>
+      <div>Total: Rp {total.toLocaleString("id-ID")}</div>
     </div>
   )}
 />
@@ -527,11 +553,12 @@ useEffect(() => {
 
 ---
 
-## 🎓 Challenge untuk Peserta
+## Challenge untuk Peserta
 
 ### Challenge #1: Add Wishlist Feature
 
 Implement wishlist functionality:
+
 - Create WishlistContext (similar to CartContext)
 - Add "heart" button on ProductCard
 - Create /wishlist page
@@ -544,15 +571,17 @@ Implement wishlist functionality:
 ### Challenge #2: Add Sorting
 
 Add sort functionality di ProductsPage:
+
 - Sort by: Price (low to high), Price (high to low), Name (A-Z)
 - Use Ant Design Select
 - Update query filters
 
 **Hint:**
+
 ```jsx
-const [sortBy, setSortBy] = useState('');
+const [sortBy, setSortBy] = useState("");
 const { data } = useQuery({
-  queryKey: ['products', { ...filters, sort: sortBy }],
+  queryKey: ["products", { ...filters, sort: sortBy }],
   // ...
 });
 ```
@@ -562,72 +591,76 @@ const { data } = useQuery({
 ### Challenge #3: Pagination
 
 Implement pagination untuk products:
+
 - Use Ant Design Pagination component
 - Update API call dengan page & limit params
 - Show current page & total pages
 
 **Hint:**
+
 ```jsx
 const [page, setPage] = useState(1);
 const { data } = useQuery({
-  queryKey: ['products', { ...filters, page }],
+  queryKey: ["products", { ...filters, page }],
   // ...
 });
 ```
 
 ---
 
-## 🆚 Comparison dengan Modul 1
+## Comparison dengan Modul 1
 
-| Feature | Modul 1 (Fundamentals) | Modul 2 (Advanced) |
-|---------|------------------------|-------------------|
-| Pages | 1 page | 5 pages ✅ |
-| Routing | None | React Router v6 ✅ |
-| Data Fetching | useEffect + axios | React Query ✅ |
-| UI Library | Custom + Tailwind | Ant Design ✅ |
-| State Management | Local useState | Context API ✅ |
-| Caching | None | Smart caching ✅ |
-| Cart | No cart | Full cart system ✅ |
+| Feature          | Modul 1 (Fundamentals) | Modul 2 (Advanced) |
+| ---------------- | ---------------------- | ------------------ |
+| Pages            | 1 page                 | 5 pages            |
+| Routing          | None                   | React Router v6    |
+| Data Fetching    | useEffect + axios      | React Query        |
+| UI Library       | Custom + Tailwind      | Ant Design         |
+| State Management | Local useState         | Context API        |
+| Caching          | None                   | Smart caching      |
+| Cart             | No cart                | Full cart system   |
 
 **Leveling Up:** From basics → Production patterns!
 
 ---
 
-## 📖 Learning Resources
+## Learning Resources
 
 **Deep Dive:**
+
 - [React Router Tutorial](https://reactrouter.com/en/main/start/tutorial)
 - [React Query Practical Guide](https://tkdodo.eu/blog/practical-react-query)
 - [Ant Design Components](https://ant.design/components/overview)
 - [Context API Guide](https://react.dev/learn/passing-data-deeply-with-context)
 
 **Video Tutorials:**
+
 - [React Query in 100 Seconds](https://www.youtube.com/watch?v=novnyCaa7To)
 - [React Router v6 Tutorial](https://www.youtube.com/watch?v=Ul3y1LXxzdU)
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 After exploring this finished project:
 
-1. ✅ **Compare dengan starter** - See what was implemented
-2. ✅ **Try challenges** - Extend functionality
-3. ✅ **Customize** - Change colors, add features
-4. ✅ **Deploy** - Share on Vercel/Netlify
-5. ➡️ **Frontend Modul 3** - UI/UX Best Practices
+1.  **Compare dengan starter** - See what was implemented
+2.  **Try challenges** - Extend functionality
+3.  **Customize** - Change colors, add features
+4.  **Deploy** - Share on Vercel/Netlify
+5.  **Frontend Modul 3** - UI/UX Best Practices
 
 ---
 
-**Well done! You now have a production-ready React dashboard! 🎉**
+**Well done! You now have a production-ready React dashboard! **
 
 _Reference Implementation - Study & Learn!_
 
 ---
 
-**📁 Repository Info:**
+** Repository Info:**
+
 - **Name:** `health-ecommerce-react-dashboard`
 - **Type:** React Advanced (Complete Implementation)
 - **Backend:** `localhost:5000` (ULTIMATE Backend)
-- **Status:** Production-ready ✅
-
+- **Status:** Production-ready

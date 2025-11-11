@@ -17,15 +17,14 @@ function ProductCard({ product }) {
       <h3 className="font-semibold">{product.name}</h3>
       <p className="text-gray-600 text-sm mt-1">{product.category}</p>
       <p className="text-xl font-bold text-blue-600 mt-2">
-        Rp {product.price?.toLocaleString('id-ID')}
+        Rp {product.price?.toLocaleString("id-ID")}
       </p>
-      
+
       <p className="text-gray-500 text-sm mt-2">
-        ⚠️ TODO: Add "Tambah ke Keranjang" button!
+        TODO: Add "Tambah ke Keranjang" button!
       </p>
     </div>
-  )
+  );
 }
 
-export default ProductCard
-
+export default ProductCard;

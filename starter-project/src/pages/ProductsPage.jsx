@@ -22,16 +22,15 @@ function ProductsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">Produk Kesehatan</h1>
-      
+
       <p className="text-gray-600">
-        ⚠️ TODO: Implement React Query untuk fetch products dari backend!
+        TODO: Implement React Query untuk fetch products dari backend!
       </p>
       <p className="text-gray-500 text-sm mt-2">
         Backend should be running at http://localhost:5000
       </p>
     </div>
-  )
+  );
 }
 
-export default ProductsPage
-
+export default ProductsPage;

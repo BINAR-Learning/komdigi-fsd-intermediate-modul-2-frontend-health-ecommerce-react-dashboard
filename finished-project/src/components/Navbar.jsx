@@ -1,7 +1,12 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Badge } from 'antd';
-import { ShoppingCartOutlined, HomeOutlined, AppstoreOutlined, LoginOutlined } from '@ant-design/icons';
-import { useCart } from '../context/CartContext';
+import { Link, useLocation } from "react-router-dom";
+import { Badge } from "antd";
+import {
+  ShoppingCartOutlined,
+  HomeOutlined,
+  AppstoreOutlined,
+  LoginOutlined,
+} from "@ant-design/icons";
+import { useCart } from "../context/CartContext";
 
 function Navbar() {
   const { cartCount } = useCart();
@@ -16,7 +21,7 @@ function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold text-blue-600">
-              🏥 Health Shop
+              Health Shop
             </span>
           </Link>
 
@@ -25,9 +30,9 @@ function Navbar() {
             <Link
               to="/"
               className={`flex items-center space-x-1 transition ${
-                isActive('/')
-                  ? 'text-blue-600 font-semibold'
-                  : 'text-gray-700 hover:text-blue-600'
+                isActive("/")
+                  ? "text-blue-600 font-semibold"
+                  : "text-gray-700 hover:text-blue-600"
               }`}
             >
               <HomeOutlined />
@@ -37,9 +42,9 @@ function Navbar() {
             <Link
               to="/products"
               className={`flex items-center space-x-1 transition ${
-                isActive('/products')
-                  ? 'text-blue-600 font-semibold'
-                  : 'text-gray-700 hover:text-blue-600'
+                isActive("/products")
+                  ? "text-blue-600 font-semibold"
+                  : "text-gray-700 hover:text-blue-600"
               }`}
             >
               <AppstoreOutlined />
@@ -49,9 +54,9 @@ function Navbar() {
             <Link
               to="/cart"
               className={`flex items-center space-x-1 transition ${
-                isActive('/cart')
-                  ? 'text-blue-600 font-semibold'
-                  : 'text-gray-700 hover:text-blue-600'
+                isActive("/cart")
+                  ? "text-blue-600 font-semibold"
+                  : "text-gray-700 hover:text-blue-600"
               }`}
             >
               <Badge count={cartCount} offset={[5, 0]} showZero>
@@ -63,9 +68,9 @@ function Navbar() {
             <Link
               to="/login"
               className={`flex items-center space-x-1 transition ${
-                isActive('/login')
-                  ? 'text-blue-600 font-semibold'
-                  : 'text-gray-700 hover:text-blue-600'
+                isActive("/login")
+                  ? "text-blue-600 font-semibold"
+                  : "text-gray-700 hover:text-blue-600"
               }`}
             >
               <LoginOutlined />
@@ -79,4 +84,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

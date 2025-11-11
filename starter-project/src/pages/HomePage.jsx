@@ -9,7 +9,7 @@ function HomePage() {
 
   // TODO: Create features section dengan 3 cards:
   // - Card 1: Produk Berkualitas
-  // - Card 2: Pengiriman Cepat  
+  // - Card 2: Pengiriman Cepat
   // - Card 3: Harga Terjangkau
 
   return (
@@ -19,12 +19,11 @@ function HomePage() {
           Selamat Datang di Health E-Commerce
         </h1>
         <p className="text-xl text-gray-600 mb-8">
-          ⚠️ TODO: Add hero content & features cards here!
+          TODO: Add hero content & features cards here!
         </p>
       </div>
     </div>
-  )
+  );
 }
 
-export default HomePage
-
+export default HomePage;

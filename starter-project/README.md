@@ -1,4 +1,4 @@
-# 🚀 Health E-Commerce Dashboard - Starter Project
+# Health E-Commerce Dashboard - Starter Project
 
 > **Frontend Modul 2: React Advanced dengan Router, Query & Ant Design**
 
@@ -11,19 +11,20 @@
 
 ---
 
-## 📦 Apa Isi Project Ini?
+## Apa Isi Project Ini?
 
 Project ini adalah **starter template** untuk belajar:
-- ✅ **React Router v6** - Multi-page navigation
-- ✅ **TanStack Query v5** - Smart data caching
-- ✅ **Ant Design v5** - Professional UI components
-- ✅ **Context API** - Global state management
 
-**Status:** ⚠️ **Incomplete** - Ada banyak TODO yang harus kamu selesaikan!
+- **React Router v6** - Multi-page navigation
+- **TanStack Query v5** - Smart data caching
+- **Ant Design v5** - Professional UI components
+- **Context API** - Global state management
+
+**Status:** **Incomplete** - Ada banyak TODO yang harus kamu selesaikan!
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 Dengan menyelesaikan TODO di project ini, kamu akan belajar:
 
@@ -35,22 +36,25 @@ Dengan menyelesaikan TODO di project ini, kamu akan belajar:
 
 ---
 
-## 🚀 Quick Start (Untuk Newbie)
+## Quick Start (Untuk Newbie)
 
 ### Prerequisites
 
 **Wajib Running:**
-- ✅ **ULTIMATE Backend** di `http://localhost:5000`
-  - Repository: `health-ecommerce-ai-integration`
-  - Folder: `finished-project/`
-  - Pastikan sudah run `npm run seed` dan `npm run dev`
+
+- **ULTIMATE Backend** di `http://localhost:5000`
+- Repository: `health-ecommerce-ai-integration`
+- Folder: `finished-project/`
+- Pastikan sudah run `npm run seed` dan `npm run dev`
 
 **Software Required:**
-- ✅ Node.js v20+ (LTS)
-- ✅ npm v10+
+
+- Node.js v20+ (LTS)
+- npm v10+
 
 **Sudah Selesai:**
-- ✅ Frontend Modul 1 (React Fundamentals)
+
+- Frontend Modul 1 (React Fundamentals)
 
 ---
 
@@ -81,29 +85,34 @@ npm run dev
 
 ---
 
-## ⚠️ TODO List (Yang Harus Kamu Kerjakan)
+## TODO List (Yang Harus Kamu Kerjakan)
 
 ### 1. Setup Providers (`src/main.jsx`)
+
 - [ ] Wrap App dengan BrowserRouter
 - [ ] Wrap App dengan QueryClientProvider
 - [ ] Add ReactQueryDevtools
 
 ### 2. Setup Routes (`src/App.jsx`)
+
 - [ ] Import semua pages
 - [ ] Configure React Router Routes
 - [ ] Add Navbar component
 
 ### 3. Create CartContext (`src/context/CartContext.jsx`)
+
 - [ ] Implement addToCart function
 - [ ] Implement removeFromCart function
 - [ ] Implement updateQuantity function
 - [ ] Calculate cartTotal & cartCount
 
 ### 4. Build Components
+
 - [ ] **Navbar**: Navigation links dengan cart badge
 - [ ] **ProductCard**: Display product dengan add to cart button
 
 ### 5. Complete Pages
+
 - [ ] **HomePage**: Hero section + features
 - [ ] **ProductsPage**: Fetch & display products dengan React Query
 - [ ] **ProductDetailPage**: Dynamic route, product details
@@ -111,42 +120,43 @@ npm run dev
 - [ ] **LoginPage**: Auth form dengan Ant Design
 
 ### 6. API Integration (`src/services/api.js`)
+
 - [ ] Create getProducts function
 - [ ] Create getProductById function
 - [ ] Create login function
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 starter-project/
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx           # ⚠️ TODO: Navigation dengan cart badge
-│   │   └── ProductCard.jsx       # ⚠️ TODO: Product display
+│   │   ├── Navbar.jsx           #  TODO: Navigation dengan cart badge
+│   │   └── ProductCard.jsx       #  TODO: Product display
 │   ├── pages/
-│   │   ├── HomePage.jsx          # ⚠️ TODO: Landing page
-│   │   ├── ProductsPage.jsx      # ⚠️ TODO: Product catalog dengan React Query
-│   │   ├── ProductDetailPage.jsx # ⚠️ TODO: Product detail
-│   │   ├── CartPage.jsx          # ⚠️ TODO: Shopping cart
-│   │   └── LoginPage.jsx         # ⚠️ TODO: Login form
+│   │   ├── HomePage.jsx          #  TODO: Landing page
+│   │   ├── ProductsPage.jsx      #  TODO: Product catalog dengan React Query
+│   │   ├── ProductDetailPage.jsx #  TODO: Product detail
+│   │   ├── CartPage.jsx          #  TODO: Shopping cart
+│   │   └── LoginPage.jsx         #  TODO: Login form
 │   ├── context/
-│   │   └── CartContext.jsx       # ⚠️ TODO: Global cart state
+│   │   └── CartContext.jsx       #  TODO: Global cart state
 │   ├── services/
-│   │   └── api.js                # ⚠️ TODO: API functions
-│   ├── App.jsx                   # ⚠️ TODO: Router setup
-│   ├── main.jsx                  # ⚠️ TODO: Provider setup
-│   └── index.css                 # ✅ Ready
-├── index.html                     # ✅ Ready
-├── vite.config.js                 # ✅ Ready
-├── tailwind.config.js             # ✅ Ready
-└── package.json                   # ✅ Ready
+│   │   └── api.js                #  TODO: API functions
+│   ├── App.jsx                   #  TODO: Router setup
+│   ├── main.jsx                  #  TODO: Provider setup
+│   └── index.css                 #  Ready
+├── index.html                     #  Ready
+├── vite.config.js                 #  Ready
+├── tailwind.config.js             #  Ready
+└── package.json                   #  Ready
 ```
 
 ---
 
-## 🧪 How to Test
+## How to Test
 
 ### 1. Check Backend Running
 
@@ -180,13 +190,14 @@ curl http://localhost:5000/api/products
 
 ---
 
-## 🐛 Common Issues & Fixes
+## Common Issues & Fixes
 
-### ❌ "Backend not running" / "Network Error"
+### "Backend not running" / "Network Error"
 
 **Problem:** Frontend tidak bisa connect ke backend
 
 **Fix:**
+
 ```bash
 # 1. Check backend running
 curl http://localhost:5000/api/products
@@ -200,84 +211,93 @@ npm run dev
 
 ---
 
-### ❌ "useQuery is not defined"
+### "useQuery is not defined"
 
 **Problem:** React Query not properly imported
 
 **Fix:**
+
 ```jsx
 // src/pages/ProductsPage.jsx
-import { useQuery } from '@tanstack/react-query';
+import { useQuery } from "@tanstack/react-query";
 ```
 
 ---
 
-### ❌ "useCart must be used within CartProvider"
+### "useCart must be used within CartProvider"
 
 **Problem:** CartProvider not wrapping App
 
 **Fix:**
+
 ```jsx
 // src/main.jsx
-import { CartProvider } from './context/CartContext'
+import { CartProvider } from "./context/CartContext";
 
 <CartProvider>
   <App />
-</CartProvider>
+</CartProvider>;
 ```
 
 ---
 
-###  ❌ "Ant Design styles not loading"
+### "Ant Design styles not loading"
 
 **Problem:** Ant Design CSS not imported
 
 **Fix:**
+
 ```jsx
 // src/main.jsx
-import 'antd/dist/reset.css';  // Add this line
+import "antd/dist/reset.css"; // Add this line
 ```
 
 ---
 
-### ❌ Port 3000 already in use
+### Port 3000 already in use
 
 **Problem:** Another app using port 3000
 
 **Fix:**
+
 ```js
 // vite.config.js - Change port
 export default defineConfig({
   server: {
-    port: 3001  // Or any free port
-  }
-})
+    port: 3001, // Or any free port
+  },
+});
 ```
 
 ---
 
-## 💡 Learning Tips
+## Learning Tips
 
 **1. Start Small**
+
 - Complete 1 TODO at a time
 - Test immediately after each change
 - Don't move to next until current works
 
 **2. Use React Query DevTools**
+
 - See queries in action
 - Understand caching behavior
 - Debug data fetching
 
 **3. Explore Ant Design**
+
 - Check [Ant Design docs](https://ant.design/)
 - 50+ components available
 - Copy examples & customize
 
 **4. Compare with Finished Project**
+
 - Stuck? Check finished-project untuk reference
 - Don't copy-paste! Understand first, then implement
 
 **5. Debug Systematically**
+
 - Read error messages carefully
 - Check browser console
 - Use React DevTools
@@ -285,9 +305,10 @@ export default defineConfig({
 
 ---
 
-## 🎯 Success Criteria
+## Success Criteria
 
 Kamu berhasil jika:
+
 - [x] All routes working (5 pages navigable)
 - [x] React Query caching products (no duplicate fetches)
 - [x] Cart context working (add, remove, persist across pages)
@@ -296,26 +317,29 @@ Kamu berhasil jika:
 
 ---
 
-## 📚 Resources
+## Resources
 
 **Documentation:**
+
 - [React Router v6](https://reactrouter.com/en/main)
 - [TanStack Query v5](https://tanstack.com/query/latest)
 - [Ant Design v5](https://ant.design/components/overview)
 - [Vite](https://vitejs.dev/)
 
 **Tutorials:**
+
 - [React Router Tutorial](https://reactrouter.com/en/main/start/tutorial)
 - [React Query Quick Start](https://tanstack.com/query/latest/docs/react/quick-start)
 - [Ant Design Getting Started](https://ant.design/docs/react/introduce)
 
 ---
 
-## 💡 Challenge #1: Add Product Filters
+## Challenge #1: Add Product Filters
 
 Implement filtering products by category & price range!
 
 **Hints:**
+
 - Add state untuk selectedCategory, minPrice, maxPrice
 - Use Ant Design Select & Input components
 - Filter products array sebelum display
@@ -323,11 +347,12 @@ Implement filtering products by category & price range!
 
 ---
 
-## 💡 Challenge #2: Add Product Search
+## Challenge #2: Add Product Search
 
 Implement search functionality!
 
 **Hints:**
+
 - Add Input.Search from Ant Design
 - Filter products by name/description
 - Update queryKey untuk refetch when search changes
@@ -335,63 +360,64 @@ Implement search functionality!
 
 ---
 
-## 💡 Challenge #3: Persist Cart to localStorage
+## Challenge #3: Persist Cart to localStorage
 
 Make cart persist after page reload!
 
 **Hints:**
+
 ```jsx
 // Load from localStorage on mount
 useEffect(() => {
-  const saved = localStorage.getItem('cart');
+  const saved = localStorage.getItem("cart");
   if (saved) setCart(JSON.parse(saved));
 }, []);
 
 // Save to localStorage when cart changes
 useEffect(() => {
-  localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem("cart", JSON.stringify(cart));
 }, [cart]);
 ```
 
 ---
 
-## 🚀 Next Steps
+## Next Steps
 
 After completing all TODOs:
 
-1. ✅ **Test thoroughly** - All features working
-2. ✅ **Compare with finished-project** - See differences
-3. ✅ **Try challenges** - Extend functionality
-4. ✅ **Deploy** - Share your work (Vercel/Netlify)
-5. ➡️ **Frontend Modul 3** - UI/UX Best Practices
+1.  **Test thoroughly** - All features working
+2.  **Compare with finished-project** - See differences
+3.  **Try challenges** - Extend functionality
+4.  **Deploy** - Share your work (Vercel/Netlify)
+5.  **Frontend Modul 3** - UI/UX Best Practices
 
 ---
 
-## 🆚 Perbedaan dengan Modul 1
+## Perbedaan dengan Modul 1
 
-| Aspect | Modul 1 (Fundamentals) | Modul 2 (Advanced) |
-|--------|------------------------|-------------------|
-| **Pages** | Single page | Multi-page (5 pages) |
-| **Routing** | No routing | React Router v6 |
-| **Data Fetching** | useEffect + axios | React Query (smart caching) |
-| **UI Library** | Custom + Tailwind | Ant Design + Tailwind |
-| **State Management** | Local useState | Context API (global) |
-| **Complexity** | Beginner | Production-ready |
+| Aspect               | Modul 1 (Fundamentals) | Modul 2 (Advanced)          |
+| -------------------- | ---------------------- | --------------------------- |
+| **Pages**            | Single page            | Multi-page (5 pages)        |
+| **Routing**          | No routing             | React Router v6             |
+| **Data Fetching**    | useEffect + axios      | React Query (smart caching) |
+| **UI Library**       | Custom + Tailwind      | Ant Design + Tailwind       |
+| **State Management** | Local useState         | Context API (global)        |
+| **Complexity**       | Beginner               | Production-ready            |
 
 **Modul 1:** Learn React basics  
 **Modul 2:** Build production patterns!
 
 ---
 
-**Happy Coding! 🚀**
+**Happy Coding! **
 
 _Practice makes perfect - complete all TODOs!_
 
 ---
 
-**📁 Repository Info:**
+** Repository Info:**
+
 - **Name:** `health-ecommerce-react-dashboard`
 - **Type:** React Advanced (Starter Template)
 - **Backend:** Requires `localhost:5000` (ULTIMATE Backend)
 - **Level:** Intermediate
-
