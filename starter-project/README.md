@@ -40,30 +40,28 @@ Dengan menyelesaikan TODO di project ini, kamu akan belajar:
 
 ### Prerequisites
 
-**Wajib Running:**
+**Wajib Running:** backend API di `http://localhost:5000`.
 
-- **ULTIMATE Backend** di `http://localhost:5000`
-- Repository: `health-ecommerce-ai-integration`
-- Folder: `finished-project/`
-- Pastikan sudah run `npm run seed` dan `npm run dev`
+PENTING - Backend (Modul 5):
+
+Clone dan jalankan backend dari Modul 5 atau gunakan link berikut:
+
+https://github.com/BINAR-Learning/health-ecommerce-external-integration
+
+Pastikan menjalankan `npm run seed` (jika tersedia) dan `npm run dev` di folder `finished-project` pada repo backend.
 
 **Software Required:**
 
 - Node.js v20+ (LTS)
 - npm v10+
 
-**Sudah Selesai:**
-
-- Frontend Modul 1 (React Fundamentals)
-
 ---
 
 ### Setup Instructions
 
 ```bash
-# 1. Pastikan kamu di folder repository yang benar
-# (Jika belum clone, clone dulu repository modul ini)
-git clone https://github.com/your-username/health-ecommerce-react-dashboard.git
+# 1. Jika belum, clone repository modul ini
+git clone https://github.com/BINAR-Learning/health-ecommerce-react-dashboard.git
 cd health-ecommerce-react-dashboard
 
 # 2. Masuk ke starter-project
@@ -71,14 +69,11 @@ cd starter-project
 
 # 3. Install dependencies
 npm install
-# Tunggu 2-3 menit (banyak packages!)
 
 # 4. Start development server
 npm run dev
 
-# 5. Open browser
-# Otomatis terbuka di http://localhost:3000
-# Jika tidak, buka manual: http://localhost:3000
+# 5. Open browser (http://localhost:3000)
 ```
 
 **Note:** Port 3000 (berbeda dengan Modul 1 yang pakai 5173)

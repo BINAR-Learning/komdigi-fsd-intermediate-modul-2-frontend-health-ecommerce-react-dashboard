@@ -50,17 +50,24 @@
 
 ### Prerequisites
 
-**Wajib Running:**
+**Wajib Running:** backend API di `http://localhost:5000`.
 
-- **ULTIMATE Backend** di `http://localhost:5000`
+PENTING - Backend (Modul 5):
+
+Clone dan jalankan backend dari Modul 5 atau gunakan link:
+
+https://github.com/BINAR-Learning/health-ecommerce-external-integration
+
+Contoh singkat:
 
 ```bash
-# Setup Backend (jika belum)
-cd ../../../Backend/Modul_5-External_API_Integration/finished-project
+git clone https://github.com/BINAR-Learning/health-ecommerce-external-integration.git
+cd health-ecommerce-external-integration/finished-project
 npm install
+# Jika ada seed data:
 npm run seed
 npm run dev
-# Keep this running!
+# Backend akan berjalan di http://localhost:5000
 ```
 
 ---
