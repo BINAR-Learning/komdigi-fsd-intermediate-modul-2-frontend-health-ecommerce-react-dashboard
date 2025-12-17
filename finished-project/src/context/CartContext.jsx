@@ -13,7 +13,6 @@ export function CartProvider({ children }) {
       try {
         setCart(JSON.parse(savedCart));
       } catch (error) {
-        console.error('Failed to load cart:', error);
       }
     }
   }, []);
